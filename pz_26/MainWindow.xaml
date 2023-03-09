@@ -1,12 +1,44 @@
 ﻿<Window x:Class="pz_26.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pz_26"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <DockPanel>
+        <StackPanel
+        DockPanel.Dock="Top">
+            <Menu MinHeight="20">
+                <MenuItem Header="Файл">
+                    <MenuItem Header="Новый проект"></MenuItem>
+                    <MenuItem Header="Открыть"></MenuItem>
+                    <MenuItem Header="Открыть"></MenuItem>
+                    <MenuItem Header="Удалить"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="0 программе"></MenuItem>
+                <Seperator>
 
-    </Grid>
-</Window>
+                </Seperator>
+
+
+
+            </Menu>
+            <WrapPanel MinHeight="20">
+                <Button x:Name="pressItalic">
+                    <Image Source="icons/italic.png" Width="15">
+                    </Image>
+                </Button>
+
+                <Button x:Name="pressBold">
+                    <Image Source="icons/italic.png" Width="15">
+                    </Image>
+                </Button>
+
+                <Button x:Name="pressUnderLine">
+                    <Image Source="icons/underLine.png" Width="15">
+                    </Image>
+                </Button>
+            </WrapPanel>
+        </StackPanel>
+    </DockPanel>
